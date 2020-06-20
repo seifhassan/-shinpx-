@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>sphinx </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<div class="ring_loader">
+					<div class="ring"></div>
+				</div>
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">sphinx</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">home page</a></li>
+							<li><a href="about.html"> about us</a></li>
+							<li class="active"><a href="exercise.html">exercise </a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<div class="post">
+								<header class="major">
+									<h1>what's bascket<br />
+									chooce and write</h1>
+								</header>
+								<ul class="actions">
+									<li><a id="help" href="#" class="button primary icon solid fa-question-circle">unknown</a></li>
+									<div id="hidden"class="hidden">
+										<div class="cont">
+											<P>help contect goes here.</P>
+											<i id="exit"class="fa fa-times"></i>
+										</div>
+									</div>
+									<li><a id="pic" href="#" class="button icon solid fa-home">picture</a></li>
+									<div id="hiddenn"class="hiddenn">
+										<div class="contt">
+											<img src="images/hh.png">
+											<i id="exitt"class="fa fa-times"></i>
+										</div>
+									</div>
+
+								</ul>
+								<!-- start the exersice-->
+								<div id="quiz" class="ex">
+									<div class="box">
+										<span class="image fit">
+											<ul class="actions">
+												<li onmousedown="incorrect.play()" class="button small">scissors</li>
+												<li onmousedown="correct.play()" id="hide1" class="button small">eraser</li>
+												<li onmousedown="correct.play()" id="hide2" class="button small">ruler</li>
+												<li onmousedown="incorrect.play()" class="button small">bag</li>
+												<li onmousedown="incorrect.play()" class="button small">pencil case</li>
+												<li onmousedown="correct.play()" id="hide3"class="button small">pencil</li>
+												<li onmousedown="correct.play()"  id="hide4"class="button small">book</li>
+												<li onmousedown="correct.play()" id="hide5"class="button small">pen</li>
+											</ul>	
+											<div class="correct">
+												<P id="hide11"class="hide"><i class="fa fa-check"> eraser</i></P>
+												<P id="hide22" class="hide"><i class="fa fa-check"> ruler</i></P>
+												<P id="hide33" class="hide"><i class="fa fa-check"> pencil</i></P>
+												<P id="hide44" class="hide"><i class="fa fa-check"> book</i></P>
+												<P id="hide55" class="hide"><i class="fa fa-check"> pen</i></P>
+											</div>	
+											<img src="images/hh.png" alt="">
+										</span>
+
+									</div>
+								</div>
+							</div>
+						<ul>
+							<li id="refresh"><a href="#" class="button icon solid fa- fa-refresh " aria-hidden="true"></a></li>
+							<li id="results"><a href="#" class="button icon solid  fa-eye"></a></li>
+						</ul>
+					</div>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script >
+				var correct = new Audio ();
+				correct.src = "./assets/sounds/correct.mp3";
+				var incorrect = new Audio();
+				incorrect.src = "./assets/sounds/incorrect.wav";
+			</script>
+	</body>
+</html>
